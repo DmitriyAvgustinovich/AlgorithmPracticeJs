@@ -1,12 +1,11 @@
-let n = 100;
+let n = 10;
 
 nextPrime:
-for (let i = 2; i <= n; i++) {
+for (let i = 2; i <= n; i++) { // Для всех i...
 
-    for (let j = 2; j < i; j++) {
-        if (i % j == 0) continue nextPrime;
-    }
+  for (let j = 2; j < i; j++) { // проверить, делится ли число..
+    if (i % j == 0) continue nextPrime; // не подходит, берём следующее
+  }
 
-    alert(i)
-
+  alert( i ); // простое число
 }
