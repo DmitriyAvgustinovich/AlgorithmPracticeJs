@@ -1,11 +1,11 @@
-function pow(x, n) {
-    x = prompt("x?")
-    n = prompt("n?")
+function pow() {
+    let x = prompt("x?")
+    let n = prompt("n?")
 
-    if (!Number.isInteger(Number(n)) || (x, n === null && x, n == "")) {
-        alert(`Степень ${n} не поддерживается, введите натуральное число`)
+    if (!n) {
+        alert(`степень ${n} не поддерживается, введите натуральное число`)
     } else {
-        alert(x **= n)
+        alert(x **= Math.round(n))
     }
 
 }
